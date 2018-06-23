@@ -13,33 +13,33 @@
 </head>
 
 <body>
-    <div id="pantalla1" class="container">
+    <div id="screen1" class="container">
         <div class="row">
             <h1>Press button to get a picture of desired object</h1>
         </div>
         <div class="row justify-content-center">
-            <div class="col text-center"><button id="camera-button" class="btn btn-primary" type="button">Abrir la cámara</button></div>
+            <div class="col text-center"><button id="camera-button" class="btn btn-primary" type="button">Open camera</button></div>
             <input id="camera-input" type="file" accept="image/*" capture="camera" style="display:none" />
         </div>
     </div>
 
-    <div id="pantalla2" class="container" style="display:none">
+    <div id="screen2" class="container" style="display:none">
         <div class="row">
-            <h1>AI recognition classifies the object as "Plastic bottle". Press button to know where to recicle it.</h1>
+            <h1>A.I. recognition classifies the object as "Plastic bottle". Press button to know where to recicle it.</h1>
             <img alt="Plastic bottle" src="assets/img/botella-plastico.jpg" class="d-block mx-auto"/>
         </div>
         <div class="row justify-content-center">
-            <div class="col text-center"><button id="recicle-button" class="btn btn-primary" type="button">Reciclar</button></div>
+            <div class="col text-center"><button id="recicle-button" class="btn btn-primary" type="button">Recycle</button></div>
         </div>
     </div>
 
-    <div id="pantalla3" class="container" style="display:none">
+    <div id="screen3" class="container" style="display:none">
         <div class="row">
             <h1>"Plastic bottle" must be placed in yellow container.</h1>
             <img alt="Yellow container" src="assets/img/contenedor-amarillo.jpg" class="d-block mx-auto"/>
         </div>
         <div class="row justify-content-center">
-            <div class="col text-center"><button id="start-button" class="btn btn-primary" type="button">Volver a empezar</button></div>
+            <div class="col text-center"><button id="start-button" class="btn btn-primary" type="button">Start over</button></div>
         </div>
     </div>
 
@@ -53,18 +53,18 @@
             });
 
             $("#camera-input").change(function(e) {
-                $("#pantalla1").hide();
-                $("#pantalla2").show();
+                $("#screen1").hide();
+                $("#screen2").show();
             });
 
             $("#recicle-button").click(function() {
-                $("#pantalla2").hide();
-                $("#pantalla3").show();
+                $("#screen2").hide();
+                $("#screen3").show();
             });
 
             $("#start-button").click(function() {
-                $("#pantalla3").hide();
-                $("#pantalla1").show();
+                $("#screen3").hide();
+                $("#screen1").show();
             });
         });
     </script>
