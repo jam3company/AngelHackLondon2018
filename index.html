@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/Brands.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/Simple-Slider.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <div id="pantalla1" class="container">
+        <div class="row">
+            <h1>Pulsa sobre el botón para sacar una fotografía del objeto que quieres reciclar</h1>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col text-center"><button id="camera-button" class="btn btn-primary" type="button">Abrir la cámara</button></div>
+            <input id="camera-input" type="file" accept="image/*" capture="camera" style="display:none" />
+        </div>
+    </div>
+
+    <div id="pantalla2" class="container" style="display:none">
+        <div class="row">
+            <h1>La fotografía ha sido reconocida como un objeto de plástico. Pulsa sobre el botón para saber dónde poder reciclarla.</h1>
+            <img alt="Botella de plástico" src="assets/img/botella-plastico.jpg" class="d-block mx-auto"/>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col text-center"><button id="recicle-button" class="btn btn-primary" type="button">Reciclar</button></div>
+        </div>
+    </div>
+
+    <div id="pantalla3" class="container" style="display:none">
+        <div class="row">
+            <h1>El plástico se debe depositar en el contenedor amarillo.</h1>
+            <img alt="Contendor amarillo" src="assets/img/contenedor-amarillo.jpg" class="d-block mx-auto"/>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col text-center"><button id="start-button" class="btn btn-primary" type="button">Volver a empezar</button></div>
+        </div>
+    </div>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+    <script type="application/javascript">
+        $( document ).ready(function() {
+            $("#camera-button").click(function() {
+                $("#camera-input").click();
+            });
+
+            $("#camera-input").change(function(e) {
+                $("#pantalla1").hide();
+                $("#pantalla2").show();
+            });
+
+            $("#recicle-button").click(function() {
+                $("#pantalla2").hide();
+                $("#pantalla3").show();
+            });
+
+            $("#start-button").click(function() {
+                $("#pantalla3").hide();
+                $("#pantalla1").show();
+            });
+        });
+    </script>
+</body>
+
+</html>
