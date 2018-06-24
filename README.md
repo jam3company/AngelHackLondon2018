@@ -6,7 +6,7 @@ Besides, many containers in our island (Gran Canaria) have already a fill level 
 
 ## Other functionality
 
-The app will provide the user with a map with the location of containers and collection points for reclycling.
+The app will provide the user with a map with the location of containers and of collection points for reclycling.
 
 ### About us
 
