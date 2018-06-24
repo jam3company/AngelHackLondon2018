@@ -10,4 +10,4 @@ The app will provide the user with a map with the location of containers and col
 
 ### About us
 
-* [Jam3 Company](http://www.jam3.company) - We are a group of five girls, and we have participated in the project "Techovation - Girls for a change". We are interesting in coding, innovation, startups and projects like *Girls who code*. 
+* [Jam3 Company](http://www.jam3.company) - We are a group of five girls, and we have participated in the project "Techovation - Girls for a change". We are interested in coding, innovation, startups and projects like *Girls who code*. 
