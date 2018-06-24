@@ -4,7 +4,7 @@ Our recycling app project. The idea is to teach young people how to recycle item
 When it comes to actually dispose of the item, there is a QR code in every container, so that the user can scan it and get the rewards. 
 Besides, many containers in our island (Gran Canaria) have already a fill level sensor, which could be given a second use by repurposing them to detect the user proximity to the container.
 
-## TODO
+## TO-DO
 
 The app will provide the user with a map with the location of containers and of collection points for reclycling.
 
